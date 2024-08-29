@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Gimnasio</title>
+</head>
+<body>
+
+<script>
+    // Función para mostrar el menú del gimnasio y manejar las opciones
+    function mostrarMenuGimnasio() {
+        let opcion;
+        do {
+            opcion = prompt(
+                "Bienvenido al Gimnasio! Seleccione una opción: \n" +
+                "1.- Ver clases disponibles \n" +
+                "2.- Ver horarios del gimnasio \n" +
+                "3.- Inscribirse en una clase \n" +
+                "4.- Ver ubicación del gimnasio \n" +
+                "5.- Salir"
+            );
+
+            switch (opcion) {
+                case "1":
+                    alert("Clases Disponibles:\n- Yoga\n- Pilates\n- Spinning\n- Zumba");
+                    break;
+                case "2":
+                    alert("Horarios del Gimnasio:\nLunes a Viernes: 6:00 AM - 10:00 PM\nSábado: 8:00 AM - 8:00 PM\nDomingo: 9:00 AM - 6:00 PM");
+                    break;
+                case "3":
+                    alert("¡Inscripción exitosa! Nos vemos en la próxima clase.");
+                    break;
+                case "4":
+                    alert("Estamos ubicados en la Avenida Fitness 789, Ciudad Saludable. ¡Te esperamos!");
+                    break;
+                case "5":
+                    alert("Gracias por visitar nuestro gimnasio. ¡Mantente en forma! Hasta luego.");
+                    break;
+                default:
+                    alert("Elección incorrecta. Por favor, seleccione una opción válida.");
+                    break;
+            }
+        } while (opcion !== "5");
+    }
+
+    // Llamar a la función para mostrar el menú del gimnasio
+    mostrarMenuGimnasio();
+
+</script>
+
+</body>
+</html>
